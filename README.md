@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Nexus Roadmap
 
-# Run and deploy your AI Studio app
+A dynamic, interactive product roadmap system.
 
-This contains everything you need to run your app locally.
+## How to run locally
 
-View your app in AI Studio: https://ai.studio/apps/drive/1CJfQ0mrxhY65hr0ipeX55UBgXkwMVEIt
+1. **Install Dependencies** (Ensure you have Node.js installed):
+   ```bash
+   npm install
+   ```
 
-## Run Locally
+2. **Set your API Key**:
+   Create a `.env` file in the root directory or set an environment variable:
+   ```bash
+   # In your terminal
+   export API_KEY=your_gemini_api_key_here
+   ```
 
-**Prerequisites:**  Node.js
+3. **Start Development Server**:
+   ```bash
+   npm run dev
+   ```
 
+4. **Open in Browser**:
+   Visit the URL shown in your terminal (usually `http://localhost:5173`).
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Project Features
+- **List View (Default)**: Clean, tabular overview of all features.
+- **Kanban Board**: Drag-and-drop style visualization of progress.
+- **Filtering**: Filter by Status, Category, and Date.
+- **Search**: Instant search across titles and descriptions.
